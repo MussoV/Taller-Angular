@@ -1,0 +1,19 @@
+<table class="table table-striped" id="series">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Channel</th>
+      <th scope="col">Seasons</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let seriesChar of series">
+    <tr>
+      <td scope="row" >{{seriesChar.id}}</td>
+      <td scope="row" >{{seriesChar.name}}</td>
+      <td scope="row" >{{seriesChar.channel}}</td>
+      <td scope="row" >{{seriesChar.seasons}}</td>
+    </tr>
+  </tbody>
+  <tr>Seasons Average:{{promedio}}</tr>
+</table>
